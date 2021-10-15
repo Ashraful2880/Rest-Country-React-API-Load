@@ -2,37 +2,66 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-area {
+  margin-top: 15px;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-field {
+  width: 40%;
+  font-size: 18px;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-field:focus {
+  outline: 0;
+  box-shadow: 10px 10px 30px grey;
 }
 
-.App-link {
-  color: #61dafb;
+.search-area input {
+  padding: 10px 30px;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-search {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #fff;
+  border: 1px solid green;
+  border-radius: 10px;
+}
+
+.btn-search:hover {
+  border: 1px solid green;
+  background-color: green;
+  color: #fff;
+
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.countryStyle {
+  background-color: rgb(3, 161, 3);
+  border: 1px solid green;
+  color: #fff;
+  padding: 10px 10px;
+  margin: 10px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.countryStyle:hover {
+  background: grey;
+  transform: scale(1.02);
+}
+
+.countryStyle img {
+  width: 250px;
 }
